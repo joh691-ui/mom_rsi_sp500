@@ -550,7 +550,7 @@ def get_data(tickers):
 # --- HUVUDLOGIK ---
 if run_btn:
     tickers_to_scan = []
-    market_index = "^GSPC" # Default US
+    market_index = "^OMX" # Default US
     
     if market_choice == "USA (S&P 500)":
         tickers_to_scan = UNIVERSE_TICKERS
@@ -671,4 +671,5 @@ if run_btn:
                     st.write(f"**Stop:** {row['Stop Loss']:.2f}")
 
     else:
+
         st.warning("Inga aktier matchade dina kriterier just nu.")
